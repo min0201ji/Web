@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>자바스크립트 입/출력</title>
+        <script type="text/javascript">
+            function start() {
+            var ask = confirm('카드로 결제합니까?');
+            if(ask==true)
+                cardNumber();
+            else
+
+                document.write('카드로 결제하지 않습니다.');
+
+            }
+
+            cardNumber = function(){
+                var cNumber = prompt('카드번호를 입력하세요.','xxxx-xxxx-xxxx-xxxx');
+                document.write('카드번호: '+ cNumber);
+                }
+
+            start();
+			
+        </script>
+    </head>
+    
+    <body>
+    </body>
+</html>
+

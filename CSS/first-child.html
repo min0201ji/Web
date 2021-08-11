@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>first-child 선택자</title>
+	<style type="text/css">
+	#content div{/* content의 모든 자손<div> 에 해당 */
+		width:400px;
+		height:50px;
+		border:solid 1px black;
+	}
+	/* div:first-child 작성시 :(콜론) 앞뒤로 띄어씌기 하면 적용 안 됨 */
+	#content div:first-child{/* 첫번째 자손 <div>에 해당함 */
+		background:yellow;
+	}
+	#content div:first-child + div{/* 두번째 자손 <div>에 해당함 */
+		background:green;
+	}
+	/* # content div:first-child + div+div */
+	#content div:nth-child(3){/* 세번째 자손 <div>에 해당함 */
+		background:gold;
+	}
+	#content div:nth-child(4){/* 네번째 자손 <div>에 해당함 */
+		background:orange;
+	}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>
+
+
