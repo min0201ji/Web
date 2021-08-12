@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제2(0730)</title>
+<script src ="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    var currentColor = 0;
+    var color_list = ['red','green','blue'];
+    $('div').css('background',color_list[i]
+        ).click(function(){
+            currentColor = (currentColor+1) % 3
+
+            $(this).css({
+                'background':colors[currentColor]
+                });
+            });
+    });
+
+</script>
+<style>
+
+    div {
+      margin:0 auto;
+      width: 100px;
+      height: 50px;
+      line-height: 50px; /* 글자를 수직 중앙정렬 합니다. */
+      text-align: center;  /* 글자를 수평 중앙정렬 합니다. */
+      color: white;
+      border: none;
+      border-radius: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <div>클릭</div>
+</body>
+</html>
