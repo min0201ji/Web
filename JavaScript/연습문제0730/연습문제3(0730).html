@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <title>연습문제3(0730)</title>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('.btn').hover(
-        function(){ //마우스 올렸을 때 수행되는 함수
-            $(this).css({opacity:'0.5});
+        $('.btn').hover(function(){ //마우스 올렸을 때 수행되는 함수
+            $('.btn').animate({opacity:'0.5'});
         },
         function() { //마우스 없을때 수행되는 함수
-            $(this).css({opacity:'1'});
-
+            $('.btn').animate({opacity:'1'});
         });
     });
 

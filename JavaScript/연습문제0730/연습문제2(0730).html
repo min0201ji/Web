@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>연습문제2(0730)</title>
-<script src ="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src ="jquery-3.5.1.min.js"></script>
 <script>
 
 $(document).ready(function(){
-    var currentColor = 0;
-    var color_list = ['red','green','blue'];
-    $('div').css('background',color_list[i]
+var col = 0;
+var color_list = ['red','green','blue'];
+$('div').css('background',color_list[col]
         ).click(function(){
-            currentColor = (currentColor+1) % 3
+            col = (col+1) % 3
 
             $(this).css({
-                'background':colors[currentColor]
+                'background':color_list[col]
                 });
-            });
-    });
+        });
+});
 
 </script>
 <style>
